@@ -1,6 +1,6 @@
 <?php namespace CalDAVClient\Facade\Exceptions;
 /**
- * Copyright 2017 OpenStack Foundation
+ * Copyright 2018 OpenStack Foundation
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -14,10 +14,11 @@
 use RuntimeException;
 use Throwable;
 /**
- * Class ServerErrorException
- * @package Facade\Exceptions
+ *
+ * Class ConflictException
+ * @package CalDAVClient\Facade\Exceptions
  */
-final class ServerErrorException extends RuntimeException
+final class ConflictException extends RuntimeException
 {
     public function __construct($message = "", $code = 0, Throwable $previous = null)
     {
