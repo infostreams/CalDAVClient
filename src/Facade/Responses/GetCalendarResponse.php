@@ -45,6 +45,10 @@ final class GetCalendarResponse extends GenericSinglePROPFINDCalDAVResponse
         return isset($this->found_props['getetag']) ? $this->found_props['getetag'] : null;
     }
 
+    public function getColor() {
+        return isset($this->found_props['calendar-color']) ? $this->found_props['calendar-color'] : null;
+    }
+    
     /**
      * @return string
      */
